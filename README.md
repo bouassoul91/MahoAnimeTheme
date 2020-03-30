@@ -1,0 +1,2 @@
+# MahoAnimeTheme
+ MahoAnime - WordPressTheme

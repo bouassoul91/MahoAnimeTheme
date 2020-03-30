@@ -1,0 +1,1321 @@
+﻿* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  max-width: 100%;
+}
+@font-face {
+  font-family: flat;
+  src: url(fonts/JF-Flat-regular.eot);
+  src: url(fonts/JF-Flat-regulard41d.eot?#iefix) format("embedded-opentype"),
+    url("fonts/JF-Flat-regular.svg#JF Flat Regular") format("svg"),
+    url(fonts/JF-Flat-regular.woff) format("woff"),
+    url(fonts/JF-Flat-regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background: #26924d url(img/background.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  font-family: flat, serif;
+}
+::-webkit-input-placeholder {
+  color: #fff;
+}
+:-moz-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;
+}
+:-ms-input-placeholder {
+  color: #fff;
+}
+.eng-warp {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: auto;
+  text-align: center;
+}
+.top-menu li,
+.main-menu li {
+  text-align: center;
+}
+.top-menu {
+  background: #1f1e1e;
+  width: 100%;
+  height: 50px;
+  display: block;
+  position: relative;
+}
+.main-menu {
+  min-height: 66px;
+  background: #1f1e1e;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 9px 22px #000;
+  text-align: center;
+}
+.top-menu li a {
+  color: #fff;
+  font-family: flat, serif;
+}
+.top-menu li {
+  display: block;
+  height: 100%;
+  line-height: 44px;
+  font-size: 17px;
+  padding: 0 18px;
+  float: right;
+}
+.main-menu li:hover {
+  border-bottom: 4px solid #17b14f;
+  border-left: 2px solid #292727;
+}
+.current-menu-item {
+  border-bottom: 4px solid #17b14f !important;
+}
+.main-menu li:first-child {
+  border-right: 2px solid #292727;
+}
+.main-menu li {
+  height: 60px;
+  line-height: 61px;
+  font-size: 20px;
+  list-style: none;
+  border-bottom: 4px solid #373837;
+  border-left: 2px solid #292727;
+  width: 192px;
+  display: inline-block;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.56);
+}
+.main-menu li > a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #fff;
+  font-family: flat, serif;
+}
+.logo img {
+  margin: 0 auto;
+  display: block;
+}
+.logo {
+  padding: 45px 0;
+  background-color: rgba(14, 132, 69, 0.78);
+}
+.posts-block {
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  background-color: rgba(57, 241, 117, 0.38);
+  width: 1200px;
+  padding: 20px 0;
+  position: relative;
+}
+.post-media {
+  width: 220px;
+  height: 300px;
+  overflow: hidden;
+  background-color: #000;
+  display: inline-block;
+  margin: 0 2px;
+  position: relative;
+  color: #fff;
+  border: 2px solid rgba(92, 177, 116, 0.79);
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.64);
+}
+.post-media img {
+  width: 100%;
+  height: 100%;
+}
+.posts-block > a {
+  display: inline-block;
+}
+.post-media > img {
+  width: 100%;
+  height: 100%;
+}
+.shows-numb {
+  position: absolute;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+  height: 100%;
+  line-height: 300px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.31);
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.post-media:hover .shows-numb {
+  transition: 0.5s all ease;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+  opacity: 1;
+}
+.shows-numb:before {
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  background-position: center center;
+  background-size: 100px 100px;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  top: 0;
+  left: 0;
+}
+.ser-title {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.66);
+  width: 164px;
+  font-size: 13px;
+  padding: 10px 28px;
+  transition: 0.4s ease-in-out;
+  top: 0;
+  font-weight: 600;
+}
+.anime-type2 {
+  position: absolute;
+  z-index: 1111;
+  width: 90px;
+  top: 8px;
+  left: -24px;
+  background-color: rgba(173, 177, 23, 0.73);
+  padding: 2px 0;
+  transform: rotate(-45deg);
+  font-size: 11px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.post-media:hover .ep-numb {
+  bottom: -100%;
+  transition: 0.4s both ease;
+}
+.MASs {
+  display: inline-block;
+  width: 100%;
+}
+.ep-numb {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  font-weight: 600;
+  transition: 0.4s all ease;
+}
+.post-media:hover .ep-title {
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+.ep-title {
+  position: absolute;
+  bottom: -100%;
+  right: 0;
+  width: 210px;
+  text-align: center;
+  font-size: 13px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.53);
+  padding: 8px 5px;
+  margin: 0;
+  transition: 0.5s all ease;
+  height: auto;
+}
+.content {
+  display: block;
+}
+.content .eng-warp {
+  overflow: hidden;
+  width: 1200px;
+  padding: 20px 0;
+}
+.alignleft {
+  float: left;
+  display: block;
+}
+.footer {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.58);
+  padding: 30px 15px;
+  border-top: 8px solid #545454;
+  display: block;
+  position: relative;
+}
+.alexa-met {
+  margin: 0 auto;
+  display: block;
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  margin-left: -50px;
+  left: 50%;
+  margin-top: -27px;
+}
+.alignright {
+  float: right;
+}
+.news-block {
+  width: 1200px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 25px;
+  border-top: 3px solid#6DFF96;
+  background: rgba(90, 90, 90, 0.21);
+  margin: 40px auto;
+}
+.news-posts h1 {
+  font-size: 12px;
+  padding: 0 4px;
+  line-height: 18px;
+  margin: 0;
+  color: #fff;
+  position: relative;
+  margin-top: 4px;
+  text-align: right;
+  float: left;
+  width: 276px;
+}
+.content-news {
+  padding: 0 10px;
+  font-size: 11px;
+  color: #e8e8e8;
+  float: right;
+  text-align: right;
+  margin-top: 8px;
+  width: 270px;
+}
+.news-posts {
+  width: 380px;
+  background: rgba(0, 0, 0, 0.61);
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: inline-block;
+  overflow: hidden;
+  min-height: 78px;
+  float: none;
+  margin: 0 5px;
+}
+.news-posts img {
+  width: 90px;
+  height: 90px;
+  float: right;
+  position: relative;
+}
+.search {
+  float: left;
+  position: relative;
+  width: 280px;
+  margin-top: 2px;
+}
+.s_search {
+  width: 229px;
+  clear: both;
+  padding: 0 10px;
+  margin-bottom: -1px;
+  height: 46px;
+  background: #0e8445;
+  border: none;
+  border-bottom: 1px solid #59a87e;
+  border-right: 8px #fff solid;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.78);
+  color: #fff;
+  font-size: 14px;
+}
+.top-con {
+  display: block;
+  overflow: hidden;
+  padding: 3px 16px;
+  margin-bottom: 20px;
+}
+.top-con h2 {
+  display: block;
+  float: right;
+  min-width: 225px;
+  background-color: rgba(0, 60, 33, 0.55);
+  text-align: right;
+  padding: 8px 10px;
+  color: #fff;
+  font-size: 22px;
+  border-right: 4px solid #fff;
+}
+.search button {
+  position: absolute;
+  top: 18px;
+  left: 8px;
+  background: 0 0;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+.top-con .search input {
+  padding: 10px 4px;
+  background: rgba(0, 0, 0, 0.18) !Important;
+  border-color: rgba(220, 220, 220, 0.1) !Important;
+  font-family: Flat;
+  font-size: 16px;
+  width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+}
+.search input {
+  padding: 10px 4px;
+  background: rgba(119, 123, 121, 0.18) !Important;
+  border-color: rgba(220, 220, 220, 0.1) !Important;
+  font-family: Flat;
+  font-size: 16px;
+  width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+}
+.anime-online {
+  margin-top: 20px;
+  overflow: hidden;
+  background-color: #0e8445;
+}
+.anime-ep {
+  float: right;
+  width: 230px;
+  background-color: #0e8445;
+  text-align: right;
+  direction: ltr;
+  position: relative;
+}
+.anime-ep ul {
+  list-style: none;
+}
+.show-frame {
+  float: left;
+  text-align: right;
+  width: 970px;
+  display: inline-block;
+}
+.show-title {
+  float: right;
+  font-size: 25px;
+  color: #fff;
+  width: 800px;
+}
+.show-views {
+  float: left;
+  font-size: 25px;
+  text-align: right;
+  color: #fff;
+}
+.show-info {
+  display: inline-block;
+  width: 940px;
+  position: relative;
+  background-color: #1f1e1e;
+  padding: 23px 15px;
+  z-index: 1;
+}
+.show-info:after {
+  content: "";
+  position: absolute;
+  background: url(img/shadow-1.png);
+  background-size: 100% 100%;
+  height: 15px;
+  width: 100%;
+  bottom: -15px;
+  right: 0;
+}
+.anime-ep ul {
+  direction: ltr;
+  overflow-y: scroll;
+}
+.anime-ep ul > a {
+}
+#eps {
+  position: relative;
+}
+.scroll-ep {
+  clear: both;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 653.5px;
+}
+.anime-ep ul > a > li {
+  padding: 8px 20px;
+  border-right: 5px solid #fff;
+  font-size: 17px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+  margin-bottom: 3px;
+  margin-top: 5px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.65);
+}
+.anime-ep .scroll-ep::-webkit-scrollbar {
+  width: 7px;
+}
+.anime-ep .scroll-ep::-webkit-scrollbar-track {
+  webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #139a44;
+}
+.anime-ep .scroll-ep::-webkit-scrollbar-thumb {
+  background-color: rgba(248, 253, 250, 0.66);
+}
+.link-eng {
+  background-color: #0e8445;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding-top: 5px;
+  padding-right: 3px;
+  padding-left: 5px;
+}
+.link-eng div {
+  float: left;
+  color: #f7f7f7;
+  padding: 11px 15px;
+  text-transform: uppercase;
+  font-size: 19px;
+  background-color: rgba(23, 177, 79, 0.36);
+  font-weight: 600;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.21);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+.link-eng .get_it:hover {
+  background: #01ce68;
+  color: #005835;
+}
+.iframe-show {
+  text-align: center;
+}
+#servers {
+  direction: ltr;
+  background-color: rgba(4, 150, 79, 0.92);
+  padding: 5px;
+  border-top: 3px solid #0c7542;
+  border-right: 3px solid #0c7542;
+  height: 571px;
+}
+.anime-ep h2 {
+  height: 54px;
+  background-color: #1f1e1e;
+  padding: 18px 12px;
+  line-height: 48px;
+  color: #fff;
+  position: relative;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.28);
+}
+.anime-ep h2:after {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: -9px;
+  height: 67px;
+  width: 1px;
+  box-shadow: -1px 0 4px rgba(0, 0, 0, 0.43);
+  transform: rotatez(30deg);
+  z-index: 999999;
+}
+.ES-content {
+  font-size: 30px;
+  font-weight: 900;
+  width: 100%;
+  line-height: 47px;
+  margin-top: 160px;
+  color: #1f1e1e;
+}
+.link-eng .show-serv {
+  border-right: none;
+  float: right;
+  position: relative;
+  color: #000;
+  z-index: 7;
+  padding-left: 30px;
+  background-color: #17b14f;
+}
+.link-eng .show-serv::after {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: -50px;
+  border-bottom: 100px solid #17b14f;
+  border-left: 50px solid transparent;
+}
+.link-eng .show-serv::before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  z-index: 96;
+  left: -62px;
+  height: 15px;
+  width: 78px;
+  background: url(img/shadow-1.png);
+  background-size: 100% 100%;
+  transform: rotate(116deg);
+}
+.anime-list > div {
+  display: inline-block;
+  width: 290px;
+  height: 329px;
+  position: relative;
+  overflow: hidden;
+  background-color: #17b14f;
+  margin-left: 5px;
+  margin-bottom: 15px;
+}
+.anime-list {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.anime-block > img {
+  height: 100%;
+  width: 100%;
+}
+.anime-title-list {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.81);
+  color: #fff;
+  padding: 10px 0;
+  border-top: 7px solid rgba(255, 255, 255, 0.76);
+  z-index: 1;
+}
+.anime-block:hover .anime-title-list {
+  height: 0;
+  padding: 0;
+}
+.anime-block:hover .anime-title-list::after {
+  bottom: 0;
+}
+.anime-title-list::after {
+  content: "ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â´ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â¯ ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾ÃƒÆ’Ã‹Å“Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â€žÂ¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ";
+  position: absolute;
+  width: 100%;
+  bottom: -66px;
+  left: 0;
+  text-align: center;
+  font-size: 20px;
+  background-color: #000;
+  transition: 0.2s ease-in-out;
+  padding: 7px 0;
+  border-top: 5px solid #fff;
+}
+.anime-data {
+  position: absolute;
+  top: 0;
+  color: #fff;
+  width: 278px;
+  height: 317px;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.81);
+  padding: 6px;
+  display: block;
+  transition: 0.2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+}
+.anime-block:hover .anime-data {
+  visibility: visible;
+  opacity: 1;
+}
+.anime-data > div {
+  background-color: rgba(27, 27, 27, 0.66);
+  padding: 7px 10px;
+  font-size: 13px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+}
+.anime-content {
+  background-color: rgba(27, 27, 27, 0.66);
+  padding: 7px 10px;
+  font-size: 13px;
+  margin-bottom: 3px;
+  border-radius: 5px;
+  text-align: center;
+  min-height: 70px;
+}
+.anime-type {
+  position: absolute;
+  z-index: 1111;
+  width: 140px;
+  top: 24px;
+  font-weight: 700;
+  left: -31px;
+  background-color: #0bca50;
+  padding: 2px 0;
+  transform: rotate(-45deg);
+  font-size: 15px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.top-items {
+  overflow: hidden;
+  height: 55px;
+  margin: 20px auto;
+  background-color: #1f1e1e;
+  padding: 10px 9px;
+  border-right: 5px solid #fff;
+}
+.list-title {
+  float: right;
+  min-width: 200px;
+  height: 38px;
+  padding: 0 14px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #fff;
+}
+.cover {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-size: cover !important;
+  background-position: center center;
+  margin-bottom: 20px;
+}
+.engs-content {
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.35);
+  background-color: rgba(9, 14, 14, 0.76);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.engs-content h1 {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  padding: 8px 20px;
+  background-color: rgba(14, 14, 14, 0.73);
+}
+.engs-content .down-ser a {
+  background-color: #15b952;
+  color: #fff;
+  position: relative;
+  padding: 6px 15px;
+  display: block;
+  width: 192px;
+  font-size: 21px;
+  padding-left: 50px;
+  line-height: 36px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.28);
+  float: left;
+}
+.engs-content a .fa {
+  left: 24px;
+  position: absolute;
+  top: 30px;
+}
+.engs-content a:hover .fa {
+  animation: mymove 0.8s infinite;
+}
+@-webkit-keyframes mymove {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 70px;
+  }
+}
+@-moz-keyframes mymove {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 70px;
+  }
+}
+@keyframes mymove {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 70px;
+  }
+}
+.engs-content a span {
+  font-size: 13px;
+  line-height: 23px;
+}
+.ES_content {
+}
+.page-numbers li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #1a1b1a;
+  text-align: center;
+}
+.page-numbers {
+  display: inline-block;
+  width: 1200px;
+  margin-top: 15px;
+  text-align: center;
+}
+.page-numbers span {
+  width: 100%;
+  height: 100%;
+  color: #faff8f;
+  font-size: 20px;
+  line-height: 15px;
+}
+.page-numbers a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  line-height: 15px;
+}
+#servers embed {
+  width: 955px;
+  height: 570px;
+}
+#servers iframe {
+  width: 955px;
+  height: 570px;
+}
+.comments {
+  text-align: right;
+  width: 1190px;
+  position: relative;
+  overflow: hidden;
+  background: rgba(10, 187, 99, 0.59);
+  list-style: none;
+  padding: 0 5px;
+  box-shadow: 0 0 150px rgba(0, 70, 28, 0.53) inset;
+}
+.comments > li {
+  padding: 10px 18px;
+  border-bottom: 1px solid #0c7542;
+  overflow: hidden;
+}
+.comments > li > ul > li {
+  padding: 12px 0;
+  list-style: none;
+  margin-right: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
+}
+.vcard {
+  float: right;
+  width: 100%;
+}
+.vcard img {
+  float: right;
+}
+.says {
+  display: none;
+}
+.comments .fn {
+  display: block;
+  float: right;
+  margin-right: 12px;
+  line-height: 33px;
+  font-size: 20px;
+}
+.comment-metadata > a {
+  font-size: 10px;
+}
+.comment-metadata .edit-link a {
+  font-size: 19px;
+  color: #b8efcb;
+}
+.reply {
+  background-color: #000;
+  width: 75px;
+  text-align: center;
+  border-radius: 5px;
+  float: left;
+}
+.comment-body {
+  overflow: hidden;
+  padding-bottom: 17px;
+}
+.reply a {
+}
+.comment-respond {
+  background-color: #292828;
+  color: #000;
+  overflow: hidden;
+  width: 1190px;
+  padding: 0 5px;
+}
+.comment-respond a {
+  color: #cc181e;
+  font-size: 21px;
+}
+.comment-reply-title {
+  padding: 10px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+  color: #fff;
+  margin-bottom: 18px;
+  margin-top: 31px;
+}
+.logged-in-as {
+  padding: 11px 15px;
+  border-bottom: 1px solid rgba(167, 167, 167, 0.17);
+  width: 100%;
+  color: #fff;
+}
+.comment-form-comment {
+  padding: 15px 0;
+  color: #fff;
+}
+.comment-form-comment textarea {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid #424242;
+  color: #fff;
+}
+.comment-form-comment label {
+  padding: 0 24px;
+  width: 60px;
+  display: block;
+  float: right;
+  line-height: 6;
+}
+.comment-form-author {
+  position: relative;
+  margin: 13px auto;
+}
+.comment-form-email {
+  position: relative;
+}
+.comment-form-email label {
+  padding: 0 24px;
+  width: 60px;
+  display: block;
+  float: right;
+}
+.comment-form-author label {
+  padding: 0 24px;
+  width: 60px;
+  display: block;
+  float: right;
+}
+.comment-form > p > .required {
+  position: absolute;
+  right: 394px;
+  color: #fff;
+}
+.comment-notes > .required {
+  position: relative !important;
+  right: 0 !important;
+}
+.form-submit .submit {
+  border: 0;
+  padding: 13px 43px;
+  background-color: #009e51;
+  color: #1b1a1a;
+  font-size: 22px;
+  margin-bottom: 15px;
+  display: inline-block;
+  border-radius: 2px;
+}
+.form-submit {
+  width: 100%;
+  text-align: center;
+}
+.comment-form > p > input {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 99, 16, 0.54);
+  color: #fff;
+  padding: 0 8px;
+}
+.auther-info {
+  background-color: #1f1e1e;
+  border-top: 3px solid #0c7542;
+  overflow: hidden;
+}
+.auther-info > img {
+  padding: 5px 10px;
+  border-radius: 80px;
+  float: right;
+}
+.auther-name {
+  float: right;
+  line-height: 33px;
+  font-size: 20px;
+  color: #fff;
+}
+.date-post {
+  float: right;
+  display: block;
+  color: #fff;
+  padding: 0 11px;
+  direction: ltr;
+}
+.social-single {
+  float: left;
+  padding: 22px 4px;
+}
+.innf {
+  margin-top: 10px;
+  position: relative;
+}
+.content-single {
+  padding: 18px 20px;
+  padding-left: 40px;
+  line-height: 40px;
+  background-color: rgba(43, 152, 83, 0.75);
+  font-size: 20px;
+  color: #000;
+  overflow: hidden;
+}
+.anime-block-show {
+}
+.anime-block-show img {
+  width: 250px;
+  height: 260px;
+  float: right;
+}
+.anime-title-show {
+  float: right;
+  width: 246px;
+  font-size: 18px;
+  line-height: 36px;
+  padding: 2px;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(8, 8, 8, 0.62);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+}
+.anime-data-show {
+  float: left;
+  width: 330px;
+  color: #fff;
+}
+.anime-data-show div {
+  padding: 8px 12px;
+  background-color: rgba(66, 66, 66, 0.29);
+  margin: 2px 0;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #559f63;
+  font-size: 17px;
+  box-shadow: 0 1px 4px #000;
+}
+.anime-content-show {
+  width: 553px;
+  float: right;
+  font-size: 16px;
+  line-height: 35px;
+  margin-right: 20px;
+  display: block;
+  border-bottom: 5px solid #424242;
+  overflow: hidden;
+  box-shadow: 0 1px 11px #000;
+  padding: 5px 10px;
+  background-color: rgba(66, 66, 66, 0.32);
+  color: #c3c2c2;
+  border-radius: 12px;
+  min-height: 248px;
+}
+.anime-information {
+  overflow: hidden;
+  background-color: #1f1e1e;
+  padding: 10px 5px;
+}
+.anime-information > h2 {
+  padding: 11px 0;
+  color: #fff;
+  position: relative;
+  width: 293px;
+  margin-bottom: 21px;
+  border-bottom: 3px solid #0c7542;
+}
+.img-s {
+  position: relative;
+  width: 250px;
+  height: 260px;
+  float: right;
+}
+.more-e {
+  background-color: #187946 !important;
+  font-size: 30px !important;
+  color: #fff !important;
+  text-align: center;
+  margin: 23px 0 !important;
+}
+.innf::before {
+  content: "";
+  position: absolute;
+  top: 26px;
+  z-index: 96;
+  left: -9px;
+  height: 9px;
+  width: 107px;
+  background: url(img/shadow-2.png);
+  background-size: 100% 100%;
+  transform: rotate(58deg);
+}
+.anime-information > h2::before {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  height: 16px;
+  width: 100%;
+  background: url(img/shadow-7.png);
+  background-size: 100% 100%;
+}
+.down-ser {
+  position: absolute;
+  bottom: 0;
+  width: 1170px;
+  background-color: #1d1d1d;
+  padding: 15px;
+}
+.to-show {
+  position: absolute;
+  top: 20px;
+  right: 362px;
+  width: 293px;
+  text-align: center;
+  font-size: 19px;
+}
+.to-show::after {
+  content: "";
+  position: absolute;
+  width: 183px;
+  display: block;
+  height: 38px;
+  background: url(img/arrows.png) no-repeat;
+  top: 14px;
+  left: -221px;
+  background-size: 100% 100%;
+}
+.ES_video {
+  width: 350px;
+  height: 250px;
+  float: left;
+  padding: 20px;
+}
+.ES_video iframe {
+  width: 100%;
+  height: 100%;
+}
+.anime-data-ser {
+  width: 784px;
+  overflow: hidden;
+  display: block;
+  float: right;
+  margin: 14px 10px;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+}
+.anime-data-ser > div {
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.anime-data-ser > div > span {
+  padding: 18px 23px;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  float: right;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-right: 3px solid rgba(0, 0, 0, 0.2);
+  width: 543px;
+}
+.anime-data-ser > div > span:first-child {
+  width: 160px;
+  border-right: none;
+  font-size: 18px;
+  font-weight: 700;
+  float: right;
+  background-color: rgba(33, 33, 33, 0.95);
+  padding: 16px;
+}
+.anime-data-ser > div:last-child {
+  border-bottom: none;
+}
+.bot-ser {
+  width: 1136px;
+  overflow: hidden;
+  padding: 15px 32px;
+  text-align: center;
+}
+.soons {
+  background-color: #fff;
+  text-align: center;
+  font-size: 209px;
+}
+.edit {
+  float: right;
+  text-align: center;
+  font-size: 21px;
+  color: #f5f5f5;
+  border-radius: 7px;
+  background-color: #cc181e;
+  padding: 2px 15px;
+  border: 1px solid #8a1e1e;
+}
+.sidbar_slide_title {
+  margin-top: 110px;
+}
+.related-post {
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 15px;
+  background-color: rgba(24, 121, 70, 0.8);
+}
+.rel-box {
+  display: inline-block;
+  width: 225px;
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.33);
+  margin: 0 3px;
+}
+.rel-box h1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  background-color: rgba(31, 30, 30, 0.53);
+  width: 205px;
+  padding: 5px 10px;
+  min-height: 48px;
+}
+.rel-box img {
+  width: 100%;
+  height: 100%;
+}
+.content-media {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(31, 30, 30, 0.61);
+  font-size: 12px;
+}
+.rel-title {
+  width: 500px;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 1px 10px;
+  border-bottom: 3px solid #000;
+  position: relative;
+  color: #fbfbfb;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.rel-title::before {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  height: 16px;
+  width: 100%;
+  background: url(img/shadow-7.png);
+  background-size: 100% 100%;
+}
+.content-single img {
+  float: right;
+  margin-left: 25px;
+  width: 240px;
+  height: 270px;
+  border: 4px solid #0c7542;
+}
+.conta-eng {
+  font-size: 20px;
+}
+.face-to {
+  font-size: 25px;
+  margin-bottom: 57px;
+  color: #fff028;
+}
+.comment-content {
+  font-size: 19px;
+  margin-top: 5px;
+  margin-right: 38px;
+}
+.alert {
+  display: inline-block;
+  width: 458px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 8px;
+  background-color: #373837;
+  padding: 5px 20px;
+  font-size: 12px;
+  border-bottom: 3px solid #0e0e0e;
+  border-radius: 10px;
+  color: #fff;
+  float: left;
+}
+#wpadminbar * {
+  max-width: none;
+}
+.down-serv {
+  float: right;
+  position: relative;
+  color: #000;
+  z-index: 7;
+  padding-left: 30px;
+  background-color: #17b14f;
+  padding: 12px 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 5px;
+  border-right: 4px solid #fff;
+  transition: 0.3s ease-in-out;
+  margin-right: 5px;
+  border-left: 3px solid rgba(12, 103, 54, 0.75);
+  border-radius: 42px 1px 0 42px;
+}
+.down-lnk a {
+  float: left;
+  padding: 12px 17px;
+  margin: 0 1px;
+  font-size: 19px;
+  border-right: 1px solid #137340;
+  direction: ltr;
+}
+.down-lnk a:first-child {
+  border-left: 1px solid #137340;
+}
+#mdfooter {
+  font-family: arial;
+}
+.theblogwidgets {
+  top: 50% !important;
+  margin-top: -275px;
+}
+.clr {
+  clear: both;
+}
+#disqus_thread {
+  background: rgba(9, 105, 54, 0.82);
+  padding: 20px;
+}
+.cont_os {
+  width: 283px;
+  height: 55px;
+  display: block;
+  overflow: hidden;
+  float: right;
+  margin-bottom: 5px;
+}
